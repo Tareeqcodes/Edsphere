@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-bg-color: #f8f9fa;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --light: #ffffff;
+  --dark: #343a40;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+}
+
+
+.uni-card:hover .overlay {
+  opacity: 1;
+}
+.active {
+  border-bottom: 2px solid orange;
+}
+.hidden {
+  display: none;
+}
+/* #signInForm + #formIcons {
+  display: block;
+}
+#orText {
+  display: block;
+}
+
+#signUpForm {
+  display: none;
+  margin: 50px auto;
+  padding: 30px 0;
+  align-items: center;
+  justify-content: center;
+}  */
+
+
+.faculty:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.faculty a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#department-pdfs {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+.dep-btn {
+  background-color: #f8f9fa;
+  color: #0062e6;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
